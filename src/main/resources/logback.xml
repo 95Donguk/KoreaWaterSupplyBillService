@@ -1,0 +1,35 @@
+<configuration>
+
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./src/main/resources/logs/elapse.log</file>
+        <encoder>
+            <pattern>
+                %d{HH:mm:ss.SSS} - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>
+              %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.nhnacademy.koreawatersupplybillservice.BootStrap" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="com.nhnacademy.koreawatersupplybillservice.service" level="INFO" additivity="false">
+    </logger>
+    <logger name="com.nhnacademy.koreawatersupplybillservice.parser" level="INFO" additivity="false">
+    </logger>
+    <logger name="com.nhnacademy.koreawatersupplybillservice.repository" level="INFO" additivity="false">
+    </logger>
+    <logger name="com.nhnacademy.koreawatersupplybillservice.report" level="INFO" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
