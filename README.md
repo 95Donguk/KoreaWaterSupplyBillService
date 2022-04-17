@@ -45,6 +45,7 @@
     - 원본 데이터가 CSV 형식에서 JSON 형식으로 변경되었습니다.
     - JSON 포멧의 데이터를 읽어서 동일한 기능을 하도록 수정하세요.
     - 가능하면 확장자에 따라 자동으로 parser 를 선택하도록 구현하세요.
-        - 이 부분은 미구현 하였음. BootStrap에서 fileLocation에서 확장자 명을 .csv 또는 .json으로 바꾸고 MainConfiguration에서 `@Qualiier` 로 지정해주어야 확장자에 따라 paser           를 하도록 구현되어 있음. 추가 수정할 예정.
+        - 이 부분은 미구현 하였음. BootStrap에서 fileLocation에서 확장자 명을 .csv 또는 .json으로 바꾸고 
+        MainConfiguration에서 `@Qualiier` 로 지정해주어야 확장자에 따라 paser를 하도록 구현되어 있음. 추가 수정할 예정.
     - jackson 라이브러리를 사용하세요.
 ---
